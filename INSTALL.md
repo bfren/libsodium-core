@@ -41,13 +41,12 @@ Please note:
 has been tested to run on the following platforms and .NET versions at
 the time of release:
 
-| OS                   | Version  | Architecture  | .NET   |
-|:-------------------- |:-------- |:------------- |:-------|
-| Windows 11           | 24H2     | x64           | 9.0.11 |
-| Windows Server 2025  | LTSC     | x64           | 9.0.11 |
-| macOS                | 15.7     | arm64         | 9.0.11 |
-| Alpine Linux         | 3.22     | x64           | 9.0.11 |
-| Ubuntu               | 24.04    | x64           | 9.0.11 |
+| OS                   | Version    | Architecture  | .NET            |
+|:-------------------- |:---------- |:------------- |:----------------|
+| Windows Server       | 10.0.26100 | x64           | 10.0.5 / 9.0.14 |
+| macOS                | 15.7       | arm64         | 10.0.5 / 9.0.14 |
+| Alpine Linux         | 3.23       | x64           | 10.0.5          |
+| Ubuntu               | 24.04      | x64           | 10.0.5 / 9.0.14 |
 
 The other supported platforms should work as well, but have not been tested.
 
@@ -62,3 +61,10 @@ library 'libsodium' or one of its dependencies.* when using libsodium for .NET?
 supported, or if the Visual C++ Redistributable has not been installed on a
 Windows system. Please refer to the [Supported Platforms](#supported-platforms)
 section above.
+
+**Q**: Is libsodium for .NET still actively developed?  
+**A:** No, libsodium-core is now in maintenance mode. While bug fixes and
+compatibility updates for new .NET versions will continue, no new features or
+enhancements are being added. For actively developed .NET libsodium bindings,
+please see
+[libsodium.org](https://doc.libsodium.org/doc/bindings_for_other_languages).
